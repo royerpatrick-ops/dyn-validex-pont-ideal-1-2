@@ -1,0 +1,85 @@
+{
+  "schema": "DYN-ZENODO-EDITORIAL-CHANGES-v0.2",
+  "original_generator_identity": {
+    "bytes": 18621,
+    "sha256": "e021ae3bc51da5ffeb4592fd01ed6b05e4f21205a1a38e57115ec8d81168d7f6"
+  },
+  "publication_generator_identity": {
+    "bytes": 22048,
+    "sha256": "e7d46261a6b2b1de75ec4edcbe500bc424db383bef4f741a6792587480d2d669"
+  },
+  "equation_strings_unchanged": true,
+  "equation_string_count": 15,
+  "changes": [
+    {
+      "old": "OUT=BASE/'deliverables/DYN-PONT_IDEAL_DETERMINISTE_1_2_v0_1'",
+      "new": "OUT=BASE.parent/'deliverables/DYN-DEPOT_ZENODO_PONT_IDEAL_1_2_v0_2'"
+    },
+    {
+      "old": "para('Version 0.1 - 6 octobre 2026','SmallB')",
+      "new": "para('Édition de dépôt 0.2 - 6 octobre 2026 | DOI : 10.5281/zenodo.23188815','SmallB')"
+    },
+    {
+      "old": "aucun échantillonnage, aucune statistique ni consommation de RNG ne sont employés.",
+      "new": "aucun échantillonnage, aucune statistique ni flux RNG scientifique ne sont employés."
+    },
+    {
+      "old": "['Partition exacte','Neuf cellules de phase et contacts fermés','Toutes coordonnées réelles admissibles sur [1,2]']",
+      "new": "['Partition exacte','Neuf cellules auxiliaires (r,q), rang et modulo','Tiré-en-arrière sur toutes coordonnées admissibles de [1,2]']"
+    },
+    {
+      "old": "Une revue extérieure de ce nouveau pont reste à effectuer ; aucune certification par assistant de preuve formelle n’est revendiquée.",
+      "new": "La revue Codex reçue accepte B01–B05 sous ces hypothèses. La revue humaine extérieure reste à effectuer ; aucune certification par assistant de preuve formelle n’est revendiquée."
+    },
+    {
+      "old": "heading('2. Les neuf cellules de phase, contacts inclus')",
+      "new": "heading('2. Les neuf cellules auxiliaires, contacts inclus')"
+    },
+    {
+      "old": "Les points d’une ligne sont q+ja. Pour tout premier support possible, 0 ≤ r < 3a/2.",
+      "new": "Les neuf cellules partitionnent le plan auxiliaire (r,q). Leur composition avec le choix du rang et les branches du modulo donne la partition complète. Les points d’une ligne sont q+ja ; tout premier support satisfait 0 ≤ r < 3a/2."
+    },
+    {
+      "old": "page();heading('7. Vérifications, limites et prochaine revue')",
+      "new": "page();heading('7. Vérifications, limites et revue reçue')"
+    },
+    {
+      "old": "['Contrelecture des preuves et des deux codes','PASS interne sous les définitions du modèle']",
+      "new": "['Contrelectures des preuves et des codes','PASS interne ; revue Codex reçue, sous les hypothèses idéales']"
+    },
+    {
+      "old": "Le nouveau registre BRIDGE_IDEAL_RESULTS.json est distinct.",
+      "new": "Le registre de dépôt ZENODO_BRIDGE_EDITION_v0_2.json est distinct des registres historiques."
+    },
+    {
+      "old": "heading('Dossier autonome pour la revue extérieure')",
+      "new": "heading('Dossier autonome pour la revue humaine')"
+    },
+    {
+      "old": "Le ZIP contient la preuve détaillée, la partition JSON, les deux codes et leurs certificats rationnels, les contrôles de contacts, les relectures internes et un prompt de revue contradictoire. Cette nouvelle revue doit contrôler les frontières, la densité, le conditionnement de phase, I₀, les dérivées et le reste de Simpson avant toute adoption au-delà du registre idéal local.",
+      "new": "Les compléments contiennent la preuve détaillée, la partition JSON, les trois scripts, les deux certificats, les contrôles de contacts et les documents de revue Codex. La revue humaine demandée porte sur les frontières, la densité, le conditionnement, I₀, les dérivées et le reste de Simpson ; ses verdicts sont à renseigner."
+    },
+    {
+      "old": "Sources normatives : protocole descriptif P2, sections du modèle et de la fenêtre ; oracle rationnel pour la définition de c ; théorèmes idéaux et revue post-P2 du 6 octobre 2026. Le pont ajoute ses propres preuves, indépendamment des résultats descriptifs de la campagne.",
+      "new": "Les hypothèses normatives du présent résultat sont définies à la section 1. La preuve historique intégrale, la partition et l’oracle rationnel sont joints. Le pont repose sur ses propres preuves, indépendamment des résultats descriptifs P2 ; aucune conformité du sampler ni normalisation canonique n’est ajoutée."
+    },
+    {
+      "old": "'DYN - Pont idéal [1,2] v0.1 | 6 octobre 2026'",
+      "new": "'Pont idéal [1,2] v0.2 | DOI : 10.5281/zenodo.23188815'"
+    },
+    {
+      "old": "DYN-PONT_IDEAL_DETERMINISTE_1_2_v0_1.pdf",
+      "new": "01_PONT_IDEAL_1_2_DOI_23188815_v0_2.pdf",
+      "occurrences": 2
+    },
+    {
+      "old": "title='DYN-VALIDEX - Pont déterministe idéal [1,2] v0.1',author='Patrick Royer ; assistance et intégration ChatGPT/Codex'",
+      "new": "title='DYN-VALIDEX - Pont idéal [1,2] - DOI 10.5281/zenodo.23188815',author='Patrick Royer'"
+    },
+    {
+      "old": "\ndef footer(c,doc):",
+      "new": "\n\npage();heading('8. Provenance, licence et appel à relecture')\npara('DOI de cette édition : 10.5281/zenodo.23188815. DOI communiqué par l’auteur pour son nouveau dépôt ; la préparation documentaire n’atteste pas la publication effective. Édition 0.2 du 6 octobre 2026, sans nouveau calcul scientifique.','SmallB')\nheading('Ce qui a été examiné et ce qui reste déclaré')\npara('Le rapport contradictoire Codex joint accepte B01–B05 sous les hypothèses strictes du modèle idéal continu. Son journal déclare 20 contrôles exacts PASS et 43 fichiers Windows identiques. Les trois sorties reproduites, la source du quatrième vérificateur et l’inventaire des 43 fichiers n’ont pas été joints. La confrontation locale a vérifié séparément les 28 fichiers du paquet source et recalculé 15 relations rationnelles accessibles ; ces périmètres ne sont pas assimilés.')\npara('Les premiers démarrages CPython de la revue reçue pouvaient lire de l’entropie pour le secret de hachage ; le journal consigne une série finale PYTHONHASHSEED=0. Aucun flux RNG scientifique n’est rapporté. Ce constat ne constitue pas une attestation d’absence de toute entropie système au démarrage du runtime.')\npara('L’oracle rationnel accepte beta sans garde explicite 0<=beta<a ; le modèle idéal impose cet intervalle. Des représentants signés sont utilisés par le canal ciblé historique. Ajouter n*a à beta décale les indices entiers de la maille au rang k ; la géométrie demeure identique. Cette équivalence ne démontre ni une loi de tirage ni un raccord numérique-continu.')\nheading('Auteur, assistance et outils')\npara('Patrick Royer est l’auteur humain du dépôt et le porteur du projet, chercheur indépendant non affilié. ChatGPT/Codex ont apporté une assistance substantielle aux dérivations, à la rédaction, au code, aux vérifications exactes, aux contrelectures IA et à l’intégration finale. Aucune revue mathématique humaine indépendante n’est attestée. La déclaration détaillée d’assistance est jointe aux compléments.')\npara('Outils gratuits : Python et sa bibliothèque standard, ReportLab, Poppler, PyMuPDF et pypdf. Les services d’IA sont distingués de ces outils ; leur gratuité n’est pas revendiquée. Les IA ne figurent pas comme auteurs des métadonnées.','SmallB')\nheading('Licence et retour humain demandé')\npara('Licence personnalisée Dynagénèse Éthique (DEL) : texte original fourni sans modification dans 03_LICENCE_DEL.pdf. La présente édition ne réécrit pas cette licence.')\npara('La checklist propose neuf contrôles couvrant B01–B05. Le formulaire demande les pièces examinées, les hypothèses, les outils éventuels, les réserves et les verdicts motivés. La revue humaine reste NOT_RUN, sans destinataire ni envoi attesté. Un avis reçu sera intégré dans un complément distinct, avec sa portée réelle.')\npara('Citation : Royer, Patrick (2026). DYN-VALIDEX — Pont idéal déterministe sur [1,2] : partition exacte et encadrement rationnel d’une intégrale géométrique. Édition 0.2. DOI : 10.5281/zenodo.23188815.','SmallB')\n\ndef footer(c,doc):"
+    }
+  ],
+  "mathematical_certificates_and_sources_modified": false
+}

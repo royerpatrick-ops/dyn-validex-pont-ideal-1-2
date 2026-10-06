@@ -1,0 +1,40 @@
+{
+  "schema": "DYN-HUMAN-REVIEW-BRIDGE-REQUEST-v0.1",
+  "packet_status": "READY_FOR_HUMAN_REVIEW",
+  "human_review_status": "NOT_RUN",
+  "recipient": null,
+  "contacted": false,
+  "sent": false,
+  "reviewer": null,
+  "review_date": null,
+  "human_verdict": null,
+  "checks": {
+    "H01": null,
+    "H02": null,
+    "H03": null,
+    "H04": null,
+    "H05": null,
+    "H06": null,
+    "H07": null,
+    "H08": null,
+    "H09": null
+  },
+  "claims": {
+    "B01": null,
+    "B02": null,
+    "B03": null,
+    "B04": null,
+    "B05": null
+  },
+  "supplied_codex_review": "DOCUMENTED_ACCEPTANCE_UNDER_STRICT_IDEAL_ASSUMPTIONS",
+  "scope": "Ideal continuous model; integral_1^2 a*E_Pa[c] da only, unnormalized",
+  "formal_proof_assistant_verification": "NOT_RUN",
+  "new_scientific_rng_or_P2_called": false,
+  "new_quadrature_or_partition_program_run": false,
+  "frozen_ledger_modified": false,
+  "seven_components": "UNKNOWN/null",
+  "global_constant_or_conjecture_validated": false,
+  "canonical_factor_applied": false,
+  "C_mod": null,
+  "continuous_law_transfer": "UNBOUNDED"
+}

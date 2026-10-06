@@ -1,0 +1,148 @@
+{
+  "schema": "DYN-ZENODO-SUPPLEMENTS-MANIFEST-v0.2",
+  "files": {
+    "COPIES_ET_IDENTITES_DE_DEPOT.json": {
+      "bytes": 7684,
+      "sha256": "5a2607a4c2816e3ac3a3ccf1dd8808546970490c5e4f5e175e7f9d0d5450ce31"
+    },
+    "DECLARATION_ASSISTANCE_IA_ET_OUTILS.txt": {
+      "bytes": 1209,
+      "sha256": "7217c80d0b90bb68ccc4405ef9f3b60efb9a2d11e5d5b4d28aaceb5df6c9a9b8"
+    },
+    "MODIFICATIONS_EDITORIALES.json": {
+      "bytes": 8253,
+      "sha256": "f8636d46f9a30048f89dad5f929d55ab77b7c1064d09f64840bd450ba66c4957"
+    },
+    "README_COMPLEMENTS.txt": {
+      "bytes": 807,
+      "sha256": "7308bff74136cd5cd612ae89d669c325b588103b4fa31de2bc591ff2b75384fd"
+    },
+    "RESUMES_FR_EN.txt": {
+      "bytes": 3703,
+      "sha256": "759dcda9a3ad8f7b51dbdf3b16a56c860ae989cea109ac3db581568874a61b41"
+    },
+    "SOURCES_NOTICE_ZENODO.txt": {
+      "bytes": 549,
+      "sha256": "851add5d8ef20643be13409517a0b01a7b100e7ad15dce914f822acbc336d890"
+    },
+    "VALIDATION_EDITION_ZENODO_v0_2.json": {
+      "bytes": 1138,
+      "sha256": "de24ddedc24df92a569181cdc8e66188289a7237fed786adc4329211632618a0"
+    },
+    "ZENODO_BRIDGE_EDITION_v0_2.json": {
+      "bytes": 6850,
+      "sha256": "07c0d762d12f973279ae6ba4f4a743471045c6b0f9a8325ea37b8f02047d04cf"
+    },
+    "create_zenodo_bridge_report.py": {
+      "bytes": 22048,
+      "sha256": "e7d46261a6b2b1de75ec4edcbe500bc424db383bef4f741a6792587480d2d669"
+    },
+    "dossier_revue_humaine_historique/BUNDLE_MANIFEST.json": {
+      "bytes": 3832,
+      "sha256": "46fe5ff7a8b8b4508b2ab213ce7d97cf0abf081ebfd96d92fa1e439548e40189"
+    },
+    "dossier_revue_humaine_historique/CHECKLIST_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 4669,
+      "sha256": "e7e0f14142a9bbaccec3122f2b4ff1be4626e5012f1bb0b2524f0ce89ed75d05"
+    },
+    "dossier_revue_humaine_historique/COPIES_ET_PROVENANCE.json": {
+      "bytes": 4639,
+      "sha256": "40be2b17d412abd7f34bf768aa712ba79009d2f096f0043a6d29ed36ed9dc2e6"
+    },
+    "dossier_revue_humaine_historique/FORMULAIRE_VERDICT_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 2286,
+      "sha256": "da606f712fac78c24c95f76da9b60507863e45f381c8e0f52f9bef7e600eb7d7"
+    },
+    "dossier_revue_humaine_historique/NOTE_TRANSMISSION_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 4738,
+      "sha256": "708f312367e30b84e0432a0b817803c8d8a42ed8cb4e3ffca8fc3c1302ad8ab8"
+    },
+    "dossier_revue_humaine_historique/README.txt": {
+      "bytes": 4437,
+      "sha256": "bb9cd562c1b78c789298c91b5da24db0b1d8664bdecab3fbe2b577071b991fc2"
+    },
+    "dossier_revue_humaine_historique/STATUT_REVUE_HUMAINE_v0_1.json": {
+      "bytes": 1073,
+      "sha256": "d023668d406c5d60603ac4d83f0767113a1f0c3687c6edfda928c9052a6557a5"
+    },
+    "dossier_revue_humaine_historique/VALIDATION_DOCUMENTAIRE.json": {
+      "bytes": 730,
+      "sha256": "23c7c7bf52d83cef2273165b10f7605cea5659ced771bc25e3f5cdf395568244"
+    },
+    "dossier_revue_humaine_historique/certificats/CERTIFICATE_FRUGAL_ANALYTIC.json": {
+      "bytes": 1494,
+      "sha256": "ce598a2da38f1bed1a2181e9a54a6b3ee2a50e7b480ed165f582096da175c218"
+    },
+    "dossier_revue_humaine_historique/certificats/CERTIFICATE_INTERVAL_TAYLOR.json": {
+      "bytes": 4193,
+      "sha256": "e9fda8568a6e56bee1a7de919eeb22b20474579fb9e9d42b3d4e4ece9e4e0a5d"
+    },
+    "dossier_revue_humaine_historique/certificats/PARTITION_CHECKS.json": {
+      "bytes": 9742,
+      "sha256": "0da0b768f6638d769937e279d0cff12ddadbd94588ebda8a398ba16d4787891e"
+    },
+    "dossier_revue_humaine_historique/code/certify_bridge_frugal.py": {
+      "bytes": 4314,
+      "sha256": "bad0985cb3b6329f76fac89b6bb3c3d6f2cc73df71871028616451033f4112fa"
+    },
+    "dossier_revue_humaine_historique/code/certify_bridge_interval.py": {
+      "bytes": 10029,
+      "sha256": "8357e83abf79e9b56a4b92082927cccf570e7e3b3bda00d1f122a588a8245717"
+    },
+    "dossier_revue_humaine_historique/code/verify_bridge_partition.py": {
+      "bytes": 5791,
+      "sha256": "493e0a3d3ef643716ff0d790dcb37c540689c1806c515d9f32eceab30f45e8e0"
+    },
+    "dossier_revue_humaine_historique/modele/model_definition_oracle_rational.py": {
+      "bytes": 3784,
+      "sha256": "364893285e033a0662084f1d73deeb3caa394fd72035442271f367681cb79ea1"
+    },
+    "dossier_revue_humaine_historique/preuve/DYN-PONT_IDEAL_DETERMINISTE_1_2_v0_1.pdf": {
+      "bytes": 66016,
+      "sha256": "87fc3f2679301c6c98104f83abb662edafbc9300d2cd21c88922774db74a7520"
+    },
+    "dossier_revue_humaine_historique/preuve/PARTITION_EXACTE.json": {
+      "bytes": 4300,
+      "sha256": "82a5978aafe48a8a73f4a04c74b2f563d7da345e2a24256dfaf119112152d4e3"
+    },
+    "dossier_revue_humaine_historique/preuve/PREUVE_PONT_IDEAL_1_2_v0_1.txt": {
+      "bytes": 13925,
+      "sha256": "cf1055946eb2e9e5b72b3d2c1b1ebb3878de54a3e5cc77de96cedbde9c3bef97"
+    },
+    "dossier_revue_humaine_historique/revues_anterieures/CERTIFICATE_RELATIONSHIPS_CODEX.json": {
+      "bytes": 2156,
+      "sha256": "26cf09242ad183770ad004c529df74c91dd0881f276d2ad2052220824897bbae"
+    },
+    "dossier_revue_humaine_historique/revues_anterieures/RAPPORT_INTEGRATION_REVUE_CODEX_PONT_IDEAL_1_2_v0_1.txt": {
+      "bytes": 3735,
+      "sha256": "f78c935a02b96b5b8173aa22f0c08773b73df4bb50d1b0a93397f8ddbab33bb1"
+    },
+    "dossier_revue_humaine_historique/revues_anterieures/RAPPORT_REVUE_MATHEMATIQUE_CONTRADICTOIRE_PONT_IDEAL_1_2_v0_1_CODEX.md": {
+      "bytes": 26761,
+      "sha256": "f46223734daa5a075abc3de4622382c1f16e003444b5558b653775ff7f20fa00"
+    },
+    "dossier_revue_humaine_historique/revues_anterieures/RECONCILIATION_CHECKS.json": {
+      "bytes": 6871,
+      "sha256": "b935cea3b11604a8ee6faee0f2c34d465a90580cf4828bc8a0dd0edc0021e086"
+    },
+    "dossier_revue_humaine_historique/revues_anterieures/REPRODUCTION_LOG.md": {
+      "bytes": 4226,
+      "sha256": "6c56b73c0517db88fbb64f987d1eb5d7d501aa253cc4c879dc3922561b1660d2"
+    },
+    "dossier_revue_humaine_historique/statut/BRIDGE_IDEAL_RESULTS_CODEX_REVIEWED_v0_2.json": {
+      "bytes": 6351,
+      "sha256": "6d0c8dd419c8d76f212c91628d15416b3fd3ff4cd51182ff270a4ae0d149408f"
+    },
+    "finalize_zenodo_bridge_deposit.py": {
+      "bytes": 7194,
+      "sha256": "53fa914064add4838a48cc89e9e42df1d2b3f95d28ad989f5bdd7d6757f5b1e4"
+    },
+    "prepare_zenodo_bridge_deposit.py": {
+      "bytes": 24699,
+      "sha256": "25294186b347a540351c944325d53fa9a7cd794a614c6ccaac5a3333706c8f18"
+    }
+  },
+  "excludes": [
+    "BUNDLE_MANIFEST_ZENODO_COMPLEMENTS.json"
+  ]
+}

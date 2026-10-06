@@ -1,0 +1,77 @@
+NOTE DE TRANSMISSION POUR REVUE MATHÉMATIQUE HUMAINE v0.1
+Pont idéal déterministe [1,2] — DYN-VALIDEX — 6 octobre 2026
+
+Projet porté par Patrick Royer, chercheur indépendant non affilié.
+Les développements et vérifications antérieurs ont été réalisés avec l'aide
+d'IA. La revue contradictoire reçue est une revue Codex ; le présent dossier
+est préparé par l'assistant OpenAI. Il sollicite un avis humain identifiable.
+
+DEMANDE PRÉCISE
+Établir si les preuves et certificats fournis justifient B01–B05 sous les
+hypothèses ci-dessous. Pour chaque réserve, indiquer la formule, la section
+et l'obligation de preuve concernées ; pour une réfutation, donner si possible
+un contre-exemple exact appartenant au domaine. Aucun avis préalable n'est
+imposé et le formulaire de retour ne contient aucun verdict humain prérempli.
+
+MODÈLE À EXAMINER
+Pour chaque a dans [1,2], delta, s et beta sont des variables continues
+indépendantes, uniformes sur [0,1/a), [0,a), [0,a), respectivement ; leur
+densité produit est 1/a. À la ligne entière k>=0 :
+  d_k = delta + k/a ; r_k = sqrt(2*d_k) ;
+  les points sont s + k*beta + a*j, j entier, dans [-r_k,r_k] fermé.
+Le premier rang occupé k_* détermine les deux extrêmes x1<=x2 et
+  c = d_k*(x2-x1) - (x2^3-x1^3)/3,
+avec c=0 pour un seul point. Poser G(a)=E_Pa[c] et
+  I_[1,2] = intégrale de 1 à 2 de a*G(a) da.
+Le facteur a de cette dernière intégrale définit la quantité locale étudiée ;
+il n'établit aucune identification à une constante d'un autre modèle.
+
+AFFIRMATIONS SOUMISES
+B01 : rang 0 ou 1 ; neuf cellules auxiliaires (r,q), puis partition complète
+      par tiré-en-arrière via choix du rang et branches du modulo ; au plus
+      trois points dans le premier support, contacts fermés compris.
+B02 : moyenne de phase H(d,a) exacte, obtenue par les lois marginales des
+      extrêmes ; aucune indépendance des deux extrêmes n'est postulée.
+B03 : formule exacte à deux branches de G et réduction I=I0+I1 sur le rectangle
+      [1,2]x[0,1], avec I0=233591/322560-128*sqrt(2)/315.
+B04 : majorants uniformes des dérivées partielles d'ordre quatre et reste
+      de Simpson tensoriel justifié, pour chacune des deux implémentations.
+B05 : encadrement rationnel, affiché par arrondis vers l'extérieur :
+      0.234689097597 <= I_[1,2] <= 0.234689433430.
+Les bornes exactes, la largeur et les grilles sont dans les certificats et le
+registre ; la largeur de l'intervalle affiché est exactement 335833/10^12.
+
+POINTS DE VIGILANCE POUR LA LECTURE
+Les neuf cellules sont celles du plan (r,q), pas neuf cellules directement
+définies sur tout (a,delta,s,beta). La preuve décrit leur composition avec le
+choix de rang et le repliement de s+beta. Aux contacts, distinguer identité
+géométrique point par point et égalité d'intégrales après retrait d'ensembles
+de mesure nulle.
+L'oracle ne rejette pas beta hors [0,a) ; le modèle de probabilité impose cet
+intervalle. Des représentants signés apparaissent dans le canal ciblé de
+l'implémentation historique. Le changement beta -> beta+n*a, n entier, ne
+change pas la maille à un rang entier. Cette propriété géométrique ne dispense
+pas de vérifier la loi de probabilité et ne prouve aucun transfert P2.
+Les deux codes partagent la réduction analytique ; leur concordance numérique
+ne remplace donc pas l'examen de B01–B03 ni celui des bornes de dérivées.
+
+PROVENANCE ET LIMITES DOCUMENTAIRES
+La revue Codex reçue accepte B01–B05 conditionnellement au modèle idéal. Elle
+déclare 20 comparaisons exactes PASS et 43/43 fichiers Windows identiques.
+Les sorties reproduites externes, le quatrième vérificateur et l'inventaire
+des 43 fichiers ne sont pas joints. L'intégration locale a vérifié séparément
+les 28 fichiers du paquet source et recalculé 15 relations arithmétiques. Ces
+périmètres ne sont pas assimilés. Le journal conserve la nuance de l'entropie
+possible du secret de hachage CPython lors des premiers démarrages et décrit
+une série finale PYTHONHASHSEED=0 ; cela est distinct du RNG scientifique.
+
+PORTÉE DU VERDICT DEMANDÉ
+Résultat idéal, local, continu et non normalisé uniquement. La revue humaine
+n'est pas encore effectuée. Aucun facteur 6/pi^2, aucune unité C_mod, aucun
+coefficient asymptotique, aucune constante globale ni conjecture ne découle
+du pont. I11/I13 restent INCONCLUSIVE ; le transfert de loi reste UNBOUNDED ;
+les sept composantes du ledger demeurent UNKNOWN/null. Un éventuel raccord
+canonique requerra une définition et une preuve distinctes.
+
+Le dossier est prêt à transmettre par le porteur du projet. Aucun tiers n'a
+été contacté et aucune diffusion ou publication nouvelle n'a été réalisée.

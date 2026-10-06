@@ -1,0 +1,39 @@
+{
+  "schema": "DYN-ZENODO-DOCUMENTARY-PACKAGE-VALIDATION-v0.2",
+  "status": "PASS_ZENODO_DOCUMENTARY_PACKAGE_READY",
+  "doi": "10.5281/zenodo.23188815",
+  "publication_effective_attested": false,
+  "zenodo_upload_or_publication_performed": false,
+  "human_review_status": "NOT_RUN",
+  "PDF_page_count": 9,
+  "PDF_pages_rendered_and_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "DOI_on_every_PDF_page": true,
+  "PDF_creator_author_human": "Patrick Royer",
+  "mathematical_equation_strings_unchanged": true,
+  "exact_enclosure_and_global_limits_unchanged": true,
+  "historical_human_review_files_copied_byte_identically": 24,
+  "prior_bridge_files_unchanged": 28,
+  "prior_human_review_packet_files_unchanged": 24,
+  "original_licence_DEL_unchanged": true,
+  "new_quadrature_or_partition_program_executed": false,
+  "new_scientific_rng_or_P2_called": false,
+  "frozen_ledger_modified": false,
+  "third_party_contacted": false,
+  "missing_external_Windows_evidence_invented": false,
+  "visual_scope": "Publication PDF only; original historical PDF and original DEL licence copied unchanged.",
+  "supplement_zip_files_fully_reread": 36,
+  "supplement_zip_identity": {
+    "bytes": 155787,
+    "sha256": "4764e9627b17fa09559dadce7c5e9176c3ec5287339fcecd633090ff7f661783"
+  }
+}

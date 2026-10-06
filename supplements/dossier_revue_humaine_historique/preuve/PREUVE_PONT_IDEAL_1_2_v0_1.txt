@@ -1,0 +1,286 @@
+DYN-VALIDEX - PREUVE DU PONT IDEAL DETERMINISTE [1,2] v0.1
+6 octobre 2026
+Statut : PASS_INTERNALLY_REVIEWED_DETERMINISTIC_IDEAL_BRIDGE_1_2
+
+Document final distinct des sources et des documents de travail historiques.
+Dérivations indépendantes et contrelecture IA interne des formules, des
+bornes de dérivées et des deux programmes rationnels achevées. La revue
+extérieure de ce NOUVEAU pont reste NOT_RUN. Le modèle idéal et ses unités
+doivent être acceptés explicitement ; aucun raccord canonique n'est ajouté.
+
+Les preuves ci-dessous définissent la partition complète, G et la réduction
+I=I0+I1. Les tableaux de dérivées donnent une quadrature rationnelle frugale ;
+une seconde implémentation avec jets d'intervalles certifie la même quantité.
+Les textes sources de travail sont conservés séparément, avec leurs statuts
+historiques conditionnels ; le présent statut est fondé sur les reçus de
+contrelecture finale inclus dans verification/.
+
+1. DÉFINITIONS
+0 <= delta < 1/a ; 0 <= s,beta < a ; leur densité produit vaut 1/a.
+La ligne k est s+k beta+a Z dans l'intervalle FERMÉ [-r_k,r_k],
+d_k=delta+k/a, r_k=sqrt(2 d_k). La première ligne occupée détermine
+k_*, puis ses extrêmes x1<=x2 et
+c=d_k(x2-x1)-(x2³-x1³)/3 ; c=0 si un seul point.
+Poser h=a²/8, r0=sqrt(2 delta), q0=s.
+
+2. PARTITION DU PREMIER RANG, AVEC CONTACTS
+Pour delta<h, r0<a/2 : la ligne 0 est vide si et seulement si
+    r0 < s < a-r0.                       (E0)
+Les deux contacts s=r0 et s=a-r0 sont OCCUPÉS. Ils appartiennent donc au
+rang 0, jamais au rang 1. Les phases occupées sont [0,r0] et [a-r0,a),
+chacune avec un seul point. À delta=0, seul s=0 occupe la ligne 0.
+
+Pour delta>=h, la ligne 0 est occupée pour toute phase, car 2r0>=a.
+À delta=h, s=a/2 donne deux points -a/2,+a/2 ; les autres phases donnent
+un seul point. La contribution au contact vaut a³/24 et n'est pas zéro,
+mais ce contact est de mesure nulle dans la phase continue.
+
+La ligne 1 est occupée pour toute phase : r1²=2delta+2/a >=2/a >=a²/4
+car a<=2. Il en découle la partition exhaustive et disjointe :
+    k_*=1 si delta<h et (E0) ;
+    k_*=0 sinon.
+À a=2, h=1/a est la borne supérieure EXCLUE de delta : la branche
+delta>=h est vide. À a=2,delta=0,s!=0, le rang est 1 et r1=a/2 ;
+q1=a/2 donne deux points, les autres phases un seul.
+
+3. PHASE DE LA LIGNE 1, AVEC CONTACT AU REPLIEMENT
+q1=(s+beta) mod a est l'unique représentant dans [0,a). Explicitement :
+    q1=s+beta       si 0<=beta<a-s ;
+    q1=s+beta-a     si a-s<=beta<a.
+Le contact beta=a-s, lorsqu'il appartient au domaine, est dans la seconde
+branche et donne q1=0. Pour s=0, la seconde branche est vide.
+En composant E0 avec ces deux branches et la table du paragraphe suivant,
+on obtient les cellules complètes dans (a,delta,s,beta). La phase q0=s
+ne dépend pas de beta ; beta reste libre dans toutes les cellules k0.
+
+4. TABLE EXHAUSTIVE DES POINTS D'UNE LIGNE, SUPPORT FERMÉ
+Pour q dans [0,a), les points de la ligne sont q+j a. Avec r>=0 :
+j_min=ceil((-r-q)/a), j_max=floor((r-q)/a).
+Les premiers supports possibles satisfont r<3a/2. La table équivalente
+ci-dessous ne demande aucun arrondi, et fixe tous les contacts :
+
+Régime 0 <= r < a/2 :
+    0 <= q <= r           : j={0}           ; c=0.
+    r < q < a-r           : aucun point.
+    a-r <= q < a          : j={-1}          ; c=0.
+À r=0, [a-r,a) est vide ; q=0 donne le point 0.
+
+Régime a/2 <= r < a :
+    0 <= q < a-r          : j={0}           ; c=0.
+    a-r <= q <= r         : j={-1,0}.
+    r < q < a             : j={-1}          ; c=0.
+Les deux contacts q=a-r et q=r sont dans la branche à deux points.
+À r=a/2, cette branche se réduit au seul contact q=a/2.
+
+Régime a <= r < 3a/2 :
+    0 <= q <= r-a         : j={-1,0,1}.
+    r-a < q < 2a-r        : j={-1,0}.
+    2a-r <= q < a         : j={-2,-1,0}.
+Les deux contacts q=r-a et q=2a-r sont dans les branches à trois points.
+À r=a, q=0 donne {-1,0,1}; la troisième branche est vide, et tout
+0<q<a donne {-1,0}. Les supports q=0 et contacts fermés sont conservés.
+
+Pour les trois branches non nulles, d=r²/2 :
+j={-1,0}   : x1=q-a,x2=q ;
+    c=a d-a q²+a² q-a³/3.
+j={-1,0,1} : x1=q-a,x2=q+a ;
+    c=2a d-2a q²-2a³/3.
+j={-2,-1,0}: x1=q-2a,x2=q ;
+    c=2a d-2a(q-a)²-2a³/3.
+
+5. SEUILS DANS a ET delta, ET MAJORANT DE TROIS POINTS
+Au rang 0 : delta<1/a donne (r0/a)²<2/a³<=2<9/4, donc r0<3a/2.
+Le seuil r0=a est delta=a²/2. Il appartient au domaine delta<1/a
+exactement si a³<2. Ainsi des cellules r0>=a existent pour
+1<=a<cuberoot(2), avec delta>=a²/2 ; à a=cuberoot(2), le contact
+delta=a²/2=1/a est exclu. Au-delà, r0<a pour toutes les phases.
+
+Au rang 1 effectivement utilisé, delta<h, donc
+(r1/a)² < 1/4+2/a³ <=9/4 ; le dernier contact 3a/2 est strictement
+exclu, y compris à a=1, car il exigerait delta=h et k1 serait impossible.
+Le seuil r1=a est delta=b(a)=a²/2-1/a.
+    1<=a<cuberoot(2) : b<0, donc toutes les lignes k1 ont r1>a.
+    a=cuberoot(2) : r1=a à delta=0 ; r1>a pour delta>0.
+    cuberoot(2)<a<cuberoot(8/3) : 0<b<h ; r1<a pour delta<b,
+         r1=a pour delta=b et r1>a pour delta>b.
+    a=cuberoot(8/3) : b=h, mais delta<h dans k1 ; donc r1<a.
+    cuberoot(8/3)<a<=2 : b>h ; donc r1<a.
+Ces seuils et la table de phase décrivent tous les jeux d'indices ; aucun
+premier support ne contient quatre points.
+
+6. MOYENNE EXACTE D'UNE LIGNE DE PHASE UNIFORME
+H(d,a) est la moyenne de c pour q uniforme dans [0,a), avec r=sqrt(2d).
+Si r<a/2, la ligne est vide ou a un seul point ; prendre c=0 dans ces
+deux cas donne H=0. À r=a/2, un seul contact a deux points, donc H=0.
+
+Si r>=a/2, chaque phase est occupée. Écrire F_d(x)=d x-x³/3.
+Le dernier point a la loi uniforme sur [r-a,r] (les contacts d'extrémité
+n'affectent pas cette loi), et le premier la loi uniforme sur [-r,-r+a].
+Comme F_d est impair et c=F_d(xmax)-F_d(xmin), sans aucune exigence
+d'indépendance des deux extrêmes,
+    H(d,a) = (2/a) ∫_(r-a)^r F_d(x) dx
+           = (2/3)d r+a d-(2/3)a² r+a³/6.
+Cette formule vaut aux contacts r=a/2,r=a et dans toutes les branches.
+Avec z=r/a, elle devient H=a³ p(z),
+    p(z)=(2z³+3z²-4z+1)/6=(2z-1)(z²+2z-1)/6,
+pour z>=1/2. Ce n'est pas une formule empirique ni statistique.
+
+7. ESPÉRANCE EXACTE G(a) ET RÉDUCTION À DEUX BRANCHES
+Pour delta<h, les phases s occupées au rang 0 donnent c=0. L'ensemble
+vide a longueur a-2r0. Conditionnellement à chaque s, beta uniforme
+rend q1=(s+beta) mod a uniforme ; sa moyenne de contribution vaut H1,
+même après conditionnement sur E0 qui ne dépend pas de beta.
+Avec la densité marginale a de delta :
+    G(a)=G0(a)+G1(a),
+    G0(a)=a∫_h^(1/a) H(delta,a)d delta,
+    G1(a)=a∫_0^h (1-2sqrt(2delta)/a)H(delta+1/a,a)d delta.
+À a=2, l'intégrale G0 est vide. Toutes les frontières fermées sont
+conservées dans la partition ; elles peuvent être retirées de ces
+intégrales seulement parce que leur mesure continue est nulle.
+
+Une primitive exacte en d de H dans d>=h est
+    Q(d,a)=(4sqrt(2)/15)d^(5/2)+(a/2)d²
+             -(4sqrt(2)/9)a²d^(3/2)+(a³/6)d.
+On vérifie terme à terme ∂Q/∂d=H et Q(h,a)=17a^5/5760. Ainsi
+    G0(a)=(4sqrt(2)/15)a^(-3/2)+1/2
+             -(4sqrt(2)/9)a^(3/2)+a³/6-17a^6/5760.
+
+Pour une quadrature déterministe régulière, poser delta=(a²/8)t²,
+0<=t<=1, et R(a,t)=sqrt(t²/4+2/a³)>=1/2. Alors
+    G1(a)=(a^6/4)∫_0^1 t(1-t)p(R(a,t)) dt.
+Le changement élimine sqrt(delta) à la frontière t=0. L'intégrande
+est réelle analytique sur un voisinage du rectangle [1,2]x[0,1].
+
+8. INTÉGRALE DU PONT : PARTIE EXACTE ET PARTIE DÉTERMINISTE
+I_[1,2]=∫_1^2 aG(a)da=I0+I1, où
+    I0=233591/322560-128sqrt(2)/315,
+    I1=∫_1^2∫_0^1 (a^7/4)t(1-t)p(sqrt(t²/4+2/a³)) dt da.
+Pour I0, une primitive exacte de aG0 est
+    T(a)=(8sqrt(2)/15)sqrt(a)+a²/4
+          -(8sqrt(2)/63)a^(7/2)+a^5/30-17a^8/46080.
+La différence T(2)-T(1) donne l'expression I0 ci-dessus. Aucune valeur
+flottante n'est nécessaire pour cette identité. Les certificats rationnels détaillés ci-dessous encadrent sqrt(2) et
+I1 avec un reste de quadrature justifié.
+
+
+ANNEXE : PREUVE DES BORNES DE DERIVEES ET DU RESTE DE QUADRATURE
+
+6. Borne du quatrième dérivé selon a
+
+Noter v_j=(1/j!) d^j v/da^j, à a quelconque dans [1,2], u fixé dans [0,1].
+q=r²=2/a+a²u²/4. On a 1<=q<=9/4 : q est convexe en a et son maximum
+est atteint à une extrémité (q(1)<=9/4, q(2)<=2). Donc 1<=r<=3/2.
+
+Les coefficients normalisés de q ont les bornes rationnelles suivantes :
+q1 dans [-2,1] ; q2 dans [1/4,9/4] ; q3 dans [-2,-1/8] ;
+q4 dans [1/16,2].
+L'identité r²=q donne successivement
+r1=q1/(2r),
+r2=(q2-r1²)/(2r),
+r3=(q3-2r1r2)/(2r),
+r4=(q4-2r1r3-r2²)/(2r).
+Des produits d'intervalles exacts donnent
+r1 dans [-1,1/2], r2 dans [-3/8,9/8],
+r3 dans [-25/16,17/16], r4 dans [-277/128,33/16].
+Les majorants absolus R0..R4 sont donc
+(3/2,1,9/8,25/16,277/128).
+
+Comme |(u²-8)/48|<=1/6, les majorants absolus des coefficients B0..B4
+sont (12,34,41,161/6,10), en utilisant simplement a<=2.
+Le quatrième coefficient de P est borné par 1/4+245/12.
+Le coefficient 4 de Br+P est donc borné par
+sum_(j=0)^4 |B_j| R_(4-j) +1/4+245/12 =6007/32.
+w<=1/4 et w est constant dans cette dérivation. Donc
+|partial_a^4 F| <=4!*(1/4)*(6007/32)=18021/16.
+
+7. Borne du quatrième dérivé selon u
+
+Fixer a. q=A+D u² avec A=2/a dans [1,2] et D=a²/4 dans [1/4,1].
+Les coefficients normalisés de r selon u vérifient
+r1=D u/r dans [0,1],
+r2=A D/(2r³) dans [0,1/2] car r²>=A, A>=1, D<=1,
+  donc r2<=D/(2sqrt(A))<=1/2,
+r3=-r1 r2/r dans [-1/2,0],
+r4=-(2r1r3+r2²)/(2r) dans [-1/8,1/2].
+Les majorants R0..R4 peuvent donc être (3/2,1,1/2,1/2,1/2).
+
+Ecrire B=C0+C2 u², C0=(a³-a⁶)/6 et C2=a⁶/48.
+B>=-28/3 et B<=1/48 : C0>=-28/3 et C0+C2=a³/6-7a⁶/48 est décroissant
+sur [1,2], avec valeur 1/48 en a=1. D'où |B|<=28/3.
+Les coefficients normalisés de B selon u sont bornés par
+|B1|<=8/3, |B2|<=4/3 ; B3=B4=0.
+Pour T=Br, on obtient |T2|<=28/3, |T3|<=22/3, |T4|<=20/3.
+Les coefficients de w sont w0<=1/4, |w1|<=1, |w2|=1 ; w3=w4=0.
+Donc le coefficient 4 de wT est borné par
+(1/4)*(20/3)+22/3+28/3=55/3.
+P=P0+P2 u², P2=a⁷/32<=4. Le coefficient 4 de wP est -P2.
+Enfin |partial_u^4 F|<=4!*(55/3+4)=536.
+
+8. Encadrement Simpson tensoriel rationnel
+
+Pour un axe de longueur 1 avec N sous-intervalles pairs, la quadrature de
+Simpson composite vérifie |integral f-S_N f|<=max|f''''|/(180N⁴).
+Les poids sont positifs et leur somme est 1. Une décomposition télescopique
+de l'erreur tensorielle donne donc, pour Na=Nu=N,
+|integral integral F-S_N^a S_N^u F|
+ <=(18021/16+536)/(180N⁴)=26597/(2880N⁴).
+
+A N=80, 6561 nœuds rationnels suffisent. Pour chaque radicand q rationnel,
+D=10^16 et n=isqrt(floor(q D²)) donnent des bornes exactes n/D<=sqrt(q)<
+(n+1)/D, réduites à l'égalité si le carré est exact. L'identité linéaire
+F=w(Br+P) permet de propager ces bornes avec le signe exact de B. Les poids
+de Simpson restent rationnels et positifs ; aucun arrondi flottant n'est
+utilisé dans l'encadrement. Le même procédé encadre sqrt(2) dans I0.
+La conversion décimale finale se fait par division entière vers l'extérieur.
+
+Le script bridge_expectation_derivation_work.py a produit :
+I12 dans [0.234689037675,0.234689488607] (décimales extérieures à 12 places),
+largeur rationnelle
+29283424670710810221260009263363501 /
+64939905515520000000000000000000000000000,
+soit environ 4.5093e-7. Le JSON garde aussi chaque borne rationnelle exacte.
+La durée est uniquement un diagnostic d'exécution, sans portée scientifique.
+
+
+ENCADREMENT ADOPTE APRES LES DEUX CALCULS ET LEUR CONTRELECTURE
+
+Code frugal : Simpson 80x80 sous-intervalles, 6561 noeuds,
+Ma=18021/16 et Mt=536 ; racines à dénominateur 10^16.
+I appartient à [0.234689037675,0.234689488607], bornes décimales extérieures.
+
+Contre-vérification indépendante d'implémentation : Simpson 1024x128
+sous-intervalles, 132225 noeuds, Ma=23189149 et Mt=2452, majorants fournis
+par des jets d'intervalles rationnels sur tout le rectangle ; racines à
+dénominateur 2^64. Les coefficients sont f^(j)/j! ; la convolution produit,
+l'inverse et la racine sont calculés par récurrence, et le coefficient 4
+est multiplié par 24. Les bornes de chaque coefficient sont conservées
+dans CERTIFICATE_INTERVAL_TAYLOR.json. La stricte positivité du radicand
+z^2>=1/4 garantit les divisions lors des dérivées de racine.
+
+Le certificat par jets est contenu dans celui du code frugal. Leur
+intersection exacte est adoptée, avec l'affichage extérieur à 12 décimales :
+
+    0.234689097597 <= I_ideal_[1,2] <= 0.234689433430.
+
+Largeur de l'intervalle affiché : 0.000000335833 < 3.36*10^-7.
+Les fractions exactes de l'intersection sont dans BRIDGE_IDEAL_RESULTS.json.
+Les deux codes partagent la réduction analytique de G, dont les preuves ont
+été dérivées et contre-relues séparément : ce sont deux vérifications
+arithmétiques internes, pas deux évaluations externes du modèle.
+
+VERIFICATIONS DE PARTITION
+810 configurations de phase contre énumération rationnelle de la maille,
+2704 contrôles exacts de rang et de contribution, 40 intégrales de phase
+polynomiales et 65 contacts enregistrés sont conformes. Les cas finis
+accompagnent la preuve universelle ; ils ne la remplacent pas. Ils ne sont
+pas des tirages ni des fixtures P2 et n'utilisent aucun mot brut.
+
+PORTEE FINALE
+Le pont est une intégrale locale du modèle idéal continu non normalisé.
+Aucun facteur 6/pi^2, aucune valeur C_mod, C_inf ou C globale, aucune
+extrapolation ou cible asymptotique. I11/I13 restent INCONCLUSIVE, le
+transfert numérique-continu reste UNBOUNDED. Les sept composantes gelées
+restent UNKNOWN/null ; aucune mise à jour des sources ou du ledger P2.
+Aucun RNG, sampler, wrapper, enfant P2, réplication ou rééchantillonnage.
+Les programmes de quadrature sont exécutés comme calculs mathématiques
+déterministes distincts, avec durées uniquement diagnostiques.

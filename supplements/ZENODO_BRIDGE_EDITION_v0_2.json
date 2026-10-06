@@ -1,0 +1,159 @@
+{
+  "schema": "DYN-ZENODO-IDEAL-BRIDGE-EDITION-v0.2",
+  "status": "READY_FOR_ZENODO_MANUAL_UPLOAD",
+  "scope": "Ideal continuous model; integral_1^2 a*E_Pa[c] da only, unnormalized",
+  "external_mathematical_review_of_this_bridge": {
+    "supplied_codex_review": "RECEIVED_READ_AND_RECONCILED",
+    "date_stated": "2026-10-06",
+    "report_identity": {
+      "bytes": 26761,
+      "sha256": "f46223734daa5a075abc3de4622382c1f16e003444b5558b653775ff7f20fa00"
+    },
+    "human_external_peer_review": "NOT_ESTABLISHED",
+    "formal_proof_assistant": "NOT_RUN",
+    "qualification": "Codex review, distinct from the internal construction and not human peer review."
+  },
+  "formal_proof_assistant_verification": "NOT_RUN",
+  "input_model": {
+    "a": "[1,2]",
+    "delta": "Uniform[0,1/a)",
+    "s": "Uniform[0,a)",
+    "beta": "Uniform[0,a)",
+    "independent_ideal_coordinates": true,
+    "closed_support": true,
+    "joint_density": "1/a",
+    "c": "d*(x2-x1)-(x2^3-x1^3)/3; zero for a single point"
+  },
+  "theorems": [
+    {
+      "id": "B01",
+      "claim": "Nine auxiliary phase cells in (r,q); their pullback through rank selection and modulo branches covers all admissible (a,delta,s,beta); rank0or1 and atmost3points.",
+      "domain": "all admissible real coordinates,1<=a<=2",
+      "supplied_codex_verdict": "ACCEPTED_UNDER_STRICT_IDEAL_CONTINUOUS_MODEL_ASSUMPTIONS"
+    },
+    {
+      "id": "B02",
+      "claim": "Exact phase average H from uniform marginals of the two extrema",
+      "domain": "r>=a/2; H=0 below threshold",
+      "supplied_codex_verdict": "ACCEPTED_UNDER_STRICT_IDEAL_CONTINUOUS_MODEL_ASSUMPTIONS"
+    },
+    {
+      "id": "B03",
+      "claim": "Exact two-branch formula for G(a) and rectangle reduction I=I0+I1",
+      "domain": "ideal continuous law on1<=a<=2",
+      "supplied_codex_verdict": "ACCEPTED_UNDER_STRICT_IDEAL_CONTINUOUS_MODEL_ASSUMPTIONS"
+    },
+    {
+      "id": "B04",
+      "claim": "Uniform fourth partial derivative bounds and tensor Simpson remainder",
+      "domain": "complete smooth rectangle[1,2]x[0,1]",
+      "supplied_codex_verdict": "ACCEPTED_UNDER_STRICT_IDEAL_CONTINUOUS_MODEL_ASSUMPTIONS"
+    },
+    {
+      "id": "B05",
+      "claim": "Rational enclosure of local ideal integral I_[1,2]",
+      "domain": "compact ideal only; no canonical normalization",
+      "supplied_codex_verdict": "ACCEPTED_UNDER_STRICT_IDEAL_CONTINUOUS_MODEL_ASSUMPTIONS"
+    }
+  ],
+  "I0_exact": "233591/322560-128*sqrt(2)/315",
+  "I1_integrand": "a^7/24*t*(1-t)*(2*z-1)*(z^2+2*z-1),z=sqrt(t^2/4+2/a^3)",
+  "adopted_exact_enclosure": {
+    "lower": "882375542249540499823008261517811277366489157054732244055081165950402356632514642162938379/3759763667257987014694689795989965551159448500027948743849907665312285797414752319029903360",
+    "upper": "176475360979196894225673049899726102935532720274190975751429938289648246636377214254762603/751952733451597402938937959197993110231889700005589748769981533062457159482950463805980672"
+  },
+  "outward_decimal_12_places": [
+    "0.234689097597",
+    "0.234689433430"
+  ],
+  "exact_width": "105220536997608779748998401603109264537026351886225172377124819906379114285759239553/313313638938165584557890816332497129263287375002329061987492305442690483117896026585825280",
+  "displayed_width_exact": "335833/1000000000000",
+  "certificates": {
+    "frugal": {
+      "file": "certificates/CERTIFICATE_FRUGAL_ANALYTIC.json",
+      "subintervals": [
+        80,
+        80
+      ],
+      "nodes": 6561,
+      "fourth_derivative_bounds": [
+        "18021/16",
+        "536"
+      ]
+    },
+    "interval_Taylor": {
+      "file": "certificates/CERTIFICATE_INTERVAL_TAYLOR.json",
+      "subintervals": [
+        1024,
+        128
+      ],
+      "nodes": 132225,
+      "fourth_derivative_bounds": [
+        "23189149",
+        "2452"
+      ]
+    }
+  },
+  "internal_review": "PASS_BOTH_IDEAL_COMPACT_BRIDGE_CERTIFICATES_INTERNAL_REVIEW",
+  "finite_check_counts": {
+    "geometry_cases": 810,
+    "rank_and_contribution_cases": 2704,
+    "phase_average_integrals_checked": 40,
+    "closed_contact_count": 65
+  },
+  "new_rng_or_scientific_campaign": false,
+  "new_replication": false,
+  "new_P2_draws": 0,
+  "new_P2_raw_words": 0,
+  "frozen_ledger_modified": false,
+  "original_seven_components": "UNKNOWN/null",
+  "I11": "INCONCLUSIVE",
+  "I13": "INCONCLUSIVE",
+  "continuous_law_transfer": "UNBOUNDED",
+  "C_mod": null,
+  "C_inf": null,
+  "B_global": null,
+  "global_C_validated": false,
+  "conjecture_validated": false,
+  "canonical_normalizing_factor_applied": false,
+  "limits": [
+    "Model-conditional ideal compact result; no transported P2 observations.",
+    "Internal independent IA reviews and exact arithmetic are not human peer review or proof-assistant verification.",
+    "No numerical value of the full ideal integral or any global constant."
+  ],
+  "historical_register_preserved": true,
+  "entry_domain_note": "The mathematical law uses beta in[0,a). The frozen oracle does not enforce this representative interval; signed beta is used by the targeted channel and is lattice-equivalent modulo a for every integer rank. No new oracle guard or source patch is adopted.",
+  "rng_scope_note": {
+    "scientific_rng_or_P2_stream_called": "NO_ACCORDING_TO_SUPPLIED_REVIEW_AND_INSPECTED_CODES",
+    "initial_cpython_hash_secret_entropy": "POSSIBLE_AS_DOCUMENTED_IN_RECEIVED_LOG",
+    "received_final_reproduction_series_hash_seed": "PYTHONHASHSEED=0",
+    "this_reconciliation_launches": "Metadata comparisons only; no quadrature or partition program rerun."
+  },
+  "review_receipt_limits": {
+    "reported_exact_checks": 20,
+    "locally_recomputed_arithmetic_relations": 15,
+    "external_reproduced_output_bytes_provided": false,
+    "external_checker_source_provided": false,
+    "windows_original_tree_file_count_reported": 43,
+    "local_original_bundle_file_count_verified": 28,
+    "windows_inventory_provided": false,
+    "interpretation": "The 43-file tree and external execution/copy identity claims are recorded as reported, not independently reconstructed here. This documentary scope limit does not alter the mathematical enclosure."
+  },
+  "human_review_and_canonical_raccord_next": "Human review of this model-conditional compact proof; canonical definition and units still required for any C_mod linkage.",
+  "edition": "0.2",
+  "doi": "10.5281/zenodo.23188815",
+  "doi_status": "USER_PROVIDED_FOR_NEW_DEPOSIT_PUBLICATION_NOT_ATTESTED",
+  "human_external_review": "NOT_RUN",
+  "new_quadrature_or_partition_run_for_this_edition": false,
+  "new_scientific_rng_or_P2_called": false,
+  "author": {
+    "name": "Patrick Royer",
+    "affiliation": null,
+    "description": "Chercheur indépendant non affilié"
+  },
+  "license": {
+    "title": "Licence Dynagénèse Éthique (DEL)",
+    "file": "03_LICENCE_DEL.pdf",
+    "source_text_modified": false
+  }
+}

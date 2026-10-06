@@ -1,0 +1,100 @@
+{
+  "schema": "DYN-HUMAN-REVIEW-PACKET-MANIFEST-v0.1",
+  "files": {
+    "CHECKLIST_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 4669,
+      "sha256": "e7e0f14142a9bbaccec3122f2b4ff1be4626e5012f1bb0b2524f0ce89ed75d05"
+    },
+    "COPIES_ET_PROVENANCE.json": {
+      "bytes": 4639,
+      "sha256": "40be2b17d412abd7f34bf768aa712ba79009d2f096f0043a6d29ed36ed9dc2e6"
+    },
+    "FORMULAIRE_VERDICT_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 2286,
+      "sha256": "da606f712fac78c24c95f76da9b60507863e45f381c8e0f52f9bef7e600eb7d7"
+    },
+    "NOTE_TRANSMISSION_REVUE_HUMAINE_v0_1.txt": {
+      "bytes": 4738,
+      "sha256": "708f312367e30b84e0432a0b817803c8d8a42ed8cb4e3ffca8fc3c1302ad8ab8"
+    },
+    "README.txt": {
+      "bytes": 4437,
+      "sha256": "bb9cd562c1b78c789298c91b5da24db0b1d8664bdecab3fbe2b577071b991fc2"
+    },
+    "STATUT_REVUE_HUMAINE_v0_1.json": {
+      "bytes": 1073,
+      "sha256": "d023668d406c5d60603ac4d83f0767113a1f0c3687c6edfda928c9052a6557a5"
+    },
+    "VALIDATION_DOCUMENTAIRE.json": {
+      "bytes": 730,
+      "sha256": "23c7c7bf52d83cef2273165b10f7605cea5659ced771bc25e3f5cdf395568244"
+    },
+    "certificats/CERTIFICATE_FRUGAL_ANALYTIC.json": {
+      "bytes": 1494,
+      "sha256": "ce598a2da38f1bed1a2181e9a54a6b3ee2a50e7b480ed165f582096da175c218"
+    },
+    "certificats/CERTIFICATE_INTERVAL_TAYLOR.json": {
+      "bytes": 4193,
+      "sha256": "e9fda8568a6e56bee1a7de919eeb22b20474579fb9e9d42b3d4e4ece9e4e0a5d"
+    },
+    "certificats/PARTITION_CHECKS.json": {
+      "bytes": 9742,
+      "sha256": "0da0b768f6638d769937e279d0cff12ddadbd94588ebda8a398ba16d4787891e"
+    },
+    "code/certify_bridge_frugal.py": {
+      "bytes": 4314,
+      "sha256": "bad0985cb3b6329f76fac89b6bb3c3d6f2cc73df71871028616451033f4112fa"
+    },
+    "code/certify_bridge_interval.py": {
+      "bytes": 10029,
+      "sha256": "8357e83abf79e9b56a4b92082927cccf570e7e3b3bda00d1f122a588a8245717"
+    },
+    "code/verify_bridge_partition.py": {
+      "bytes": 5791,
+      "sha256": "493e0a3d3ef643716ff0d790dcb37c540689c1806c515d9f32eceab30f45e8e0"
+    },
+    "modele/model_definition_oracle_rational.py": {
+      "bytes": 3784,
+      "sha256": "364893285e033a0662084f1d73deeb3caa394fd72035442271f367681cb79ea1"
+    },
+    "preuve/DYN-PONT_IDEAL_DETERMINISTE_1_2_v0_1.pdf": {
+      "bytes": 66016,
+      "sha256": "87fc3f2679301c6c98104f83abb662edafbc9300d2cd21c88922774db74a7520"
+    },
+    "preuve/PARTITION_EXACTE.json": {
+      "bytes": 4300,
+      "sha256": "82a5978aafe48a8a73f4a04c74b2f563d7da345e2a24256dfaf119112152d4e3"
+    },
+    "preuve/PREUVE_PONT_IDEAL_1_2_v0_1.txt": {
+      "bytes": 13925,
+      "sha256": "cf1055946eb2e9e5b72b3d2c1b1ebb3878de54a3e5cc77de96cedbde9c3bef97"
+    },
+    "revues_anterieures/CERTIFICATE_RELATIONSHIPS_CODEX.json": {
+      "bytes": 2156,
+      "sha256": "26cf09242ad183770ad004c529df74c91dd0881f276d2ad2052220824897bbae"
+    },
+    "revues_anterieures/RAPPORT_INTEGRATION_REVUE_CODEX_PONT_IDEAL_1_2_v0_1.txt": {
+      "bytes": 3735,
+      "sha256": "f78c935a02b96b5b8173aa22f0c08773b73df4bb50d1b0a93397f8ddbab33bb1"
+    },
+    "revues_anterieures/RAPPORT_REVUE_MATHEMATIQUE_CONTRADICTOIRE_PONT_IDEAL_1_2_v0_1_CODEX.md": {
+      "bytes": 26761,
+      "sha256": "f46223734daa5a075abc3de4622382c1f16e003444b5558b653775ff7f20fa00"
+    },
+    "revues_anterieures/RECONCILIATION_CHECKS.json": {
+      "bytes": 6871,
+      "sha256": "b935cea3b11604a8ee6faee0f2c34d465a90580cf4828bc8a0dd0edc0021e086"
+    },
+    "revues_anterieures/REPRODUCTION_LOG.md": {
+      "bytes": 4226,
+      "sha256": "6c56b73c0517db88fbb64f987d1eb5d7d501aa253cc4c879dc3922561b1660d2"
+    },
+    "statut/BRIDGE_IDEAL_RESULTS_CODEX_REVIEWED_v0_2.json": {
+      "bytes": 6351,
+      "sha256": "6d0c8dd419c8d76f212c91628d15416b3fd3ff4cd51182ff270a4ae0d149408f"
+    }
+  },
+  "excludes": [
+    "BUNDLE_MANIFEST.json"
+  ]
+}

@@ -1,0 +1,56 @@
+INTEGRATION DE LA REVUE CODEX DU PONT IDEAL [1,2] v0.1
+6 octobre 2026
+Statut : PASS_RECEIVED_BRIDGE_REVIEW_EXACT_RECONCILIATION.
+
+La revue contradictoire Codex fournie accepte B01-B05 sous les hypothèses
+strictes du modèle idéal continu. Son rapport, son journal et ses comparaisons
+rationnelles sont lus et conservés sans modification. L'encadrement demeure :
+0.234689097597 <= I_[1,2] <= 0.234689433430, arrondis vers l'extérieur,
+dans les unités de l'intégrale idéale locale, sans facteur 6/pi².
+
+Le PDF fourni est exactement identique au PDF antérieur. Le manifeste de notre
+paquet local est entièrement vérifié : 28 fichiers, 27 entrées plus manifeste.
+Les empreintes des trois scripts et du ledger citées dans la revue concordent
+avec ces pièces. Les 15 relations arithmétiques des certificats accessibles
+dans les pièces jointes sont recalculées exactement, sans relancer les trois
+programmes. Les 20 comparaisons PASS rapportées comprennent aussi des faits de
+copie et de reproduction externes : leurs sorties originales et le quatrième
+programme de contrôle ne sont pas joints. Leur exécution est donc consignée
+comme déclarée par la revue, sans prétendre à une observation directe ici.
+
+Le décompte Windows 43/43 est déclaré dans la revue et son journal. Aucun
+inventaire des 43 fichiers n'est joint. Il n'est pas assimilé aux 28 fichiers
+de notre paquet ni reconstruit par ajout de quinze pièces hypothétiques. Cette
+limite documentaire ne réfute pas les preuves ni l'encadrement rationnel.
+
+CLARIFICATIONS ADOPTEES DANS UN REGISTRE DISTINCT
+1. Les neuf cellules partitionnent le plan auxiliaire (r,q), pour chaque a,
+   et non directement tout l'espace (a,delta,s,beta). La partition complète
+   de cet espace est leur tiré-en-arrière par le choix du premier rang et par
+   les deux branches du repliement modulo a. Aucun cas de contact n'est perdu.
+2. La loi idéale retient 0<=beta<a. L'oracle gelé n'impose pas ce garde de
+   représentant ; le canal ciblé conserve intentionnellement beta signé.
+   Deux représentants différant d'un multiple entier de a donnent la même
+   maille pour chaque rang entier. L'absence de garde est une limite de
+   validation du domaine canonique à l'API, sans divergence sur le domaine
+   admissible. Aucun garde supplémentaire n'est ajouté au code gelé.
+3. Aucun flux RNG scientifique/P2 n'a été appelé selon la revue. Celle-ci
+   consigne que les premiers démarrages CPython pouvaient lire de l'entropie
+   pour le secret de hachage. La série finale rapportée fixe PYTHONHASHSEED=0.
+   Les anciens énoncés 'aucun RNG' décrivent les calculs et flux scientifiques,
+   sans attester l'absence de toute entropie système au démarrage du runtime.
+4. Revue Codex du nouveau pont : effectuée et documentée. Revue humaine
+   extérieure : non établie par le dossier. Assistant de preuve : NOT_RUN.
+   Le NOT_RUN de la version antérieure reste un instantané historique intact.
+
+L'original du pont, les certificats, le PDF reçu et le ledger restent inchangés.
+Le registre courant distinct est BRIDGE_IDEAL_RESULTS_CODEX_REVIEWED_v0_2.json.
+Les sept composantes gelées restent UNKNOWN/null. Le transfert de loi demeure
+UNBOUNDED ; I11/I13 INCONCLUSIVE ; C_mod/C_inf/B_global restent null. Aucun
+coefficient asymptotique, constante globale, conjecture ou transfert P2 n'est
+validé. Aucun nouveau calcul de quadrature, sampler, wrapper ou run P2.
+
+Le pont est clos au niveau de ses preuves et de la revue Codex conditionnelles
+au modèle idéal. Le jalon suivant proposé est une revue humaine indépendante
+du dossier existant et la fourniture d'une définition canonique explicite si
+un raccord vers C_mod est ensuite recherché.

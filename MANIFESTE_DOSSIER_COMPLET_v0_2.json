@@ -1,0 +1,52 @@
+{
+  "schema": "DYN-ZENODO-FULL-DEPOSIT-PACKET-MANIFEST-v0.2",
+  "files": {
+    "00_MODE_EMPLOI_DEPOT_ZENODO.txt": {
+      "bytes": 1944,
+      "sha256": "e2fc9dbb707d76e8664b317c3a0dac1e43718ff66c65544fd28453bc10fb33f0"
+    },
+    "01_PONT_IDEAL_1_2_DOI_23188815_v0_2.pdf": {
+      "bytes": 69502,
+      "sha256": "765b0b39c691625e13a42a5ecd429e986e93f5818f13a81173933dcb85afc804"
+    },
+    "02_SUPPLEMENTS_PONT_IDEAL_1_2_v0_2.zip": {
+      "bytes": 155787,
+      "sha256": "4764e9627b17fa09559dadce7c5e9176c3ec5287339fcecd633090ff7f661783"
+    },
+    "02_SUPPLEMENTS_PONT_IDEAL_1_2_v0_2.zip.sha256": {
+      "bytes": 105,
+      "sha256": "fe5d5e607ef8e5337c3b5e0161e321f87b9f3e82e0a70698bdc4413e3e772b75"
+    },
+    "03_LICENCE_DEL.pdf": {
+      "bytes": 94863,
+      "sha256": "733e1ad1e948125ef498a36461f6c548a8b4104e5dfa604805704d33a7b8515b"
+    },
+    "04_MANIFESTE_FICHIERS_ZENODO_v0_2.json": {
+      "bytes": 662,
+      "sha256": "2ca9a63600771e5d906a1161c0871d9296a89ee143cb32faeb5c9ce45c387b70"
+    },
+    "CITATION_DEPOT_v0_2.txt": {
+      "bytes": 278,
+      "sha256": "bcb38a9ad159a4b05992ba437b7dc1f66027862614236150d6638d5b1a2112e4"
+    },
+    "DESCRIPTION_ZENODO_FR_EN_v0_2.html": {
+      "bytes": 5474,
+      "sha256": "a55f25a421f41d68800888ccc86711ed969c41bd995c8944c3824719960e66ca"
+    },
+    "METADONNEES_ZENODO_v0_2.txt": {
+      "bytes": 7399,
+      "sha256": "a14249103e5ff8f30315aeea1b1d606a897d10f785c10b2971a1d5a09f5153d4"
+    },
+    "SOURCES_NOTICE_ZENODO.txt": {
+      "bytes": 549,
+      "sha256": "851add5d8ef20643be13409517a0b01a7b100e7ad15dce914f822acbc336d890"
+    },
+    "VALIDATION_DEPOT_ZENODO_v0_2.json": {
+      "bytes": 1319,
+      "sha256": "de034196c83c8fd58ce99bc97bd73b9cee95fb71b23e50df602b11f8ed9ec104"
+    }
+  },
+  "excludes": [
+    "MANIFESTE_DOSSIER_COMPLET_v0_2.json"
+  ]
+}

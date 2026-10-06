@@ -1,0 +1,39 @@
+{
+  "status": "RATIONAL_ENCLOSURE_CONDITIONAL_ON_COMPANION_PROOF",
+  "quantity": "I_ideal_[1,2] = integral_1^2 a*G(a) da",
+  "domain": {
+    "a": [
+      1,
+      2
+    ],
+    "u": [
+      0,
+      1
+    ]
+  },
+  "simpson_even_subdivisions_each_axis": 80,
+  "number_of_nodes": 6561,
+  "sqrt_denominator": "10000000000000000",
+  "fourth_derivative_bounds": {
+    "a": "18021/16",
+    "u": "536"
+  },
+  "quadrature_truncation_absolute_bound": "26597/117964800000",
+  "sqrt_nodes_interval_width_after_positive_quadrature": "353140330656801323337643/9277129359360000000000000000000000000000",
+  "I0_exact": "233591/322560 - (128/315)*sqrt(2)",
+  "I1_simpson_lower_rational": "316073186613814658179211206669510640153/3710851743744000000000000000000000000000",
+  "I1_simpson_upper_rational": "526788644356357999058905782316733292017/6184752906240000000000000000000000000000",
+  "I_lower_rational": "6096273572878289498503283269726574481071/25975962206208000000000000000000000000000",
+  "I_upper_rational": "10160475477080262971378952956217133044119/43293270343680000000000000000000000000000",
+  "I_interval_width_rational": "29283424670710810221260009263363501/64939905515520000000000000000000000000000",
+  "I_decimal_outward_12_places": [
+    "0.234689037675",
+    "0.234689488607"
+  ],
+  "rng_created_or_consumed": false,
+  "p2_called": false,
+  "sampling_or_statistics": false,
+  "canonical_factor_applied": false,
+  "ledger_modified": false,
+  "elapsed_seconds_diagnostic": 0.20926701799999137
+}

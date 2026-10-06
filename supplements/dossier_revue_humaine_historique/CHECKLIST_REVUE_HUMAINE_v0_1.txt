@@ -1,0 +1,60 @@
+CHECKLIST DE REVUE MATHÉMATIQUE HUMAINE v0.1
+Pont idéal [1,2] — 6 octobre 2026
+
+Neuf contrôles à instruire ; aucune case n'est déclarée acquise par la préparation.
+Réponses possibles : ACCEPTÉ / ACCEPTÉ AVEC RÉSERVES / REFUSÉ / NON EXAMINÉ.
+Pour chaque réponse, expliciter les hypothèses retenues et citer les éléments examinés.
+
+H01 — Définitions, mesure et quantité intégrée — B01/B03
+Pièces : Preuve §1, §7–8 ; note de transmission.
+Vérifier les intervalles semi-ouverts, le support fermé, la densité produit 1/a, l'indépendance des coordonnées et le facteur a dans I. Confirmer que c et le rang occupé sont bien définis.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H02 — Premier rang et contacts — B01
+Pièces : Preuve §2–3 ; PARTITION_EXACTE.json.
+Avec h=a²/8, vérifier k_*=1 exactement pour delta<h et r0<s<a-r0 ; tous les autres cas ont rang 0. Contrôler les contacts, delta=0, delta=h, a=2, et beta=a-s replié à q1=0.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H03 — Neuf cellules auxiliaires et partition complète — B01
+Pièces : Preuve §3–5 ; PARTITION_EXACTE.json.
+Vérifier chaque intervalle de q et jeu d'indices pour r<a/2, a/2<=r<a et a<=r<3a/2, avec leurs frontières. Vérifier ensuite le tiré-en-arrière via q0=s, q1=(s+beta) mod a et le choix du rang ; aucune couverture de l'espace complet ne doit reposer sur le seul nombre neuf.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H04 — Extrêmes, contribution et seuils en a — B01
+Pièces : Preuve §4–5 ; oracle rationnel de référence.
+Recalculer les trois polynômes non nuls de c, les seuils cuberoot(2), cuberoot(8/3) et r<3a/2 au rang choisi. Examiner les cas r=a et les contacts exclus à la borne delta=1/a ; justifier l'absence de quatre points sans échantillonnage.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H05 — Moyenne de phase exacte — B02
+Pièces : Preuve §6 ; contrôles polynomiaux dans code/verify_bridge_partition.py.
+Justifier les lois marginales des premier et dernier points et leur utilisation sans indépendance. Recalculer H=0 sous r<a/2, la valeur de moyenne au contact r=a/2, puis H et sa factorisation pour r>=a/2 ; ne pas confondre moyenne nulle et c ponctuellement nul au contact.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H06 — Conditionnement et réduction analytique — B03
+Pièces : Preuve §7–8 ; certificats/I0 et intégrande.
+Vérifier l'uniformité de q1 conditionnellement à chaque s et à E0, le poids 1-2*r0/a, les deux intégrales de G, les primitives, delta=(a²/8)*t², I0 et l'intégrande rectangulaire. Justifier le retrait des frontières de mesure nulle et l'analyticité sur un voisinage du rectangle.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H07 — Dérivées uniformes et jets — B04
+Pièces : Annexe de la preuve ; deux scripts et deux certificats.
+Vérifier les formes équivalentes de F avec u=t : le r utilisé par le code frugal vaut a*z=sqrt(2/a+a²*t²/4). Vérifier les bornes analytiques Ma=18021/16, Mt=536, puis les récurrences produit/inverse/racine des jets rationnels. Vérifier la validité sur tout le rectangle, la positivité des diviseurs et la conversion f^(4)=24*coefficient4 donnant Ma=23189149 et Mt=2452.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H08 — Reste de quadrature et arithmétique dirigée — B04/B05
+Pièces : Annexe ; certificats ; code/certify_bridge_frugal.py et certify_bridge_interval.py.
+Justifier Ma/(180*Na^4)+Mt/(180*Nt^4) par les poids positifs de somme 1 et la décomposition tensorielle. Vérifier les grilles paires 80x80 et 1024x128, les racines par isqrt, le signe des multiplicateurs et les fractions exactes ; distinguer troncature Simpson, largeur des racines et durées diagnostiques.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]
+
+H09 — Encadrement adopté et portée finale — B05
+Pièces : Deux certificats ; registre dans statut/ ; revues_anterieures/.
+Comparer les fractions : inclusion stricte du certificat par jets dans le frugal, intersection adoptée, largeur exacte, plancher/plafond à 12 décimales. Expliquer pourquoi les cas finis accompagnent la preuve sans la remplacer, et limiter le verdict à I_[1,2] idéal non normalisé, sans déduction vers 6/pi², C_mod, P2 ou une constante globale.
+Verdict : [à renseigner]
+Motifs, calculs, référence précise : [à renseigner]

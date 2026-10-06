@@ -1,0 +1,34 @@
+MODE D’EMPLOI — DÉPÔT ZENODO DU PONT IDÉAL [1,2]
+DOI communiqué : 10.5281/zenodo.23188815
+
+Ce dossier prépare votre brouillon existant. Il n’a pas été publié depuis
+cette session, et la résolution publique du DOI n’est pas attestée ici.
+
+FICHIERS À TÉLÉVERSER DANS ZENODO
+1. 01_PONT_IDEAL_1_2_DOI_23188815_v0_2.pdf : article principal portant le DOI, 0.2.
+2. 02_SUPPLEMENTS_PONT_IDEAL_1_2_v0_2.zip : preuve historique, scripts, certificats,
+   registre de dépôt, revues Codex, checklist et formulaire humain vierge.
+3. 03_LICENCE_DEL.pdf : votre texte DEL original, sans modification.
+4. 04_MANIFESTE_FICHIERS_ZENODO_v0_2.json : SHA-256 et tailles de ces trois fichiers.
+5. 02_SUPPLEMENTS_PONT_IDEAL_1_2_v0_2.zip.sha256 : empreinte du ZIP des compléments.
+
+Le dossier complet DYN-DEPOT_ZENODO_PONT_IDEAL_1_2_v0_2.zip est un transport
+pour vous ; l’extraire pour sélectionner les cinq fichiers ci-dessus.
+Il contient aussi les métadonnées, la citation et le présent guide.
+
+SAISIE
+Ouvrir le brouillon où le DOI a été réservé. Copier les champs du fichier
+METADONNEES_ZENODO_v0_2.txt et la description FR/EN. Choisir la licence
+personnalisée DEL et le type prépublication. Définir le PDF comme fichier
+de prévisualisation du dépôt. Prévisualiser la notice, puis utiliser Publish
+lorsque vous décidez de mettre ce dossier à disposition.
+
+CONTENU SCIENTIFIQUE
+Les équations et tableaux mathématiques, les scripts et les certificats sont
+ceux du pont déjà examiné. Cette édition ajoute DOI, auteur humain, provenance
+et statut de revue actualisé, sans nouvelle campagne ni nouveau calcul.
+Le texte/PDF historique et le ledger gelé restent intacts. La revue humaine
+reste NOT_RUN et aucun résultat global ne reçoit de promotion.
+
+Après publication, transmettre l’adresse https://doi.org/10.5281/zenodo.23188815
+avec la demande ciblée de relecture ; la checklist figure dans les compléments.

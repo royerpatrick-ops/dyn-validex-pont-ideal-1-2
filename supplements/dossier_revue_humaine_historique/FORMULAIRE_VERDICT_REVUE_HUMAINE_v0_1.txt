@@ -1,0 +1,41 @@
+FORMULAIRE DE RETOUR DE REVUE MATHÉMATIQUE HUMAINE v0.1
+
+État initial : NOT_RUN. Aucun verdict ci-dessous n'est prérempli.
+À renseigner sur une copie distincte après examen.
+
+Nom du relecteur : [à renseigner]
+Affiliation, ou indépendant : [à renseigner]
+Date de début / fin : [à renseigner]
+Périmètre et fichiers effectivement examinés : [à renseigner]
+Empreinte SHA-256 du ZIP reçu : [à renseigner]
+Relations antérieures avec le projet / indépendance : [à renseigner]
+Outils, calculs, exécutions ou aide IA utilisés : [à renseigner]
+Hypothèses du modèle explicitement acceptées / contestées : [à renseigner]
+
+Pour chacun : ACCEPTÉ / ACCEPTÉ AVEC RÉSERVES / REFUSÉ / NON EXAMINÉ.
+H01 : [à renseigner] ; justification et réserves : [à renseigner]
+H02 : [à renseigner] ; justification et réserves : [à renseigner]
+H03 : [à renseigner] ; justification et réserves : [à renseigner]
+H04 : [à renseigner] ; justification et réserves : [à renseigner]
+H05 : [à renseigner] ; justification et réserves : [à renseigner]
+H06 : [à renseigner] ; justification et réserves : [à renseigner]
+H07 : [à renseigner] ; justification et réserves : [à renseigner]
+H08 : [à renseigner] ; justification et réserves : [à renseigner]
+H09 : [à renseigner] ; justification et réserves : [à renseigner]
+
+Verdict mathématique par affirmation :
+B01 : [à renseigner] ; dépendances et réserves : [à renseigner]
+B02 : [à renseigner] ; dépendances et réserves : [à renseigner]
+B03 : [à renseigner] ; dépendances et réserves : [à renseigner]
+B04 : [à renseigner] ; dépendances et réserves : [à renseigner]
+B05 : [à renseigner] ; dépendances et réserves : [à renseigner]
+
+Conclusion globale sur le seul pont idéal local : [à renseigner]
+Lacunes bloquantes / corrections demandées : [à renseigner]
+Contre-exemples exacts admissibles, le cas échéant : [à renseigner]
+Étapes non examinées et limites de la revue : [à renseigner]
+Autorisation éventuelle de citer le nom et/ou publier le rapport : [à renseigner]
+Signature ou autre mode d'attestation choisi : [à renseigner]
+
+Un avis reçu sera conservé avec sa portée réelle dans un complément distinct.
+Il ne modifiera pas automatiquement le ledger gelé ni les statuts globaux.

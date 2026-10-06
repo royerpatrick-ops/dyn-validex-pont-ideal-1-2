@@ -1,0 +1,40 @@
+{
+  "schema": "CODEX-INDEPENDENT-DETERMINISTIC-BRIDGE-CHECK-v0.1",
+  "status": "PASS",
+  "method": "integers, fractions.Fraction, exact JSON comparison and SHA-256; no floating-point decision",
+  "scope": "deterministic control only; not a P2 replication or scientific campaign",
+  "checks": {
+    "copied_scripts_sha256_match_sources": true,
+    "frugal_reproduction_matches_original_except_elapsed_time": true,
+    "interval_reproduction_matches_original_except_elapsed_time": true,
+    "partition_reproduction_matches_original_exactly": true,
+    "frugal_node_count_is_(N+1)^2": true,
+    "interval_node_count_is_(Na+1)(Nt+1)": true,
+    "frugal_remainder_formula_exact": true,
+    "interval_remainder_formula_exact": true,
+    "jet_order4_times_24_gives_Ma": true,
+    "jet_order4_times_24_gives_Mt": true,
+    "I0_radical_enclosed_by_exact_squaring": true,
+    "interval_certificate_strictly_contained_in_frugal_certificate": true,
+    "results_adopt_exact_interval_certificate": true,
+    "reported_exact_width_is_endpoint_difference": true,
+    "12_decimal_lower_is_exact_floor": true,
+    "12_decimal_upper_is_exact_ceiling": true,
+    "9_decimal_lower_is_exact_floor": true,
+    "9_decimal_upper_is_exact_ceiling": true,
+    "displayed_12_decimal_width_exact": true,
+    "no_rng_campaign_or_ledger_promotion_flags": true
+  },
+  "exact_interval": {
+    "lower": "882375542249540499823008261517811277366489157054732244055081165950402356632514642162938379/3759763667257987014694689795989965551159448500027948743849907665312285797414752319029903360",
+    "upper": "176475360979196894225673049899726102935532720274190975751429938289648246636377214254762603/751952733451597402938937959197993110231889700005589748769981533062457159482950463805980672",
+    "width": "105220536997608779748998401603109264537026351886225172377124819906379114285759239553/313313638938165584557890816332497129263287375002329061987492305442690483117896026585825280"
+  },
+  "outward_decimal_12_places": [
+    "0.234689097597",
+    "0.234689433430"
+  ],
+  "number_of_checks": 20,
+  "rng_created_or_consumed": false,
+  "p2_called": false
+}

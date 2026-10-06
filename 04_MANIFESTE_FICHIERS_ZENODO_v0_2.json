@@ -1,0 +1,19 @@
+{
+  "schema": "DYN-ZENODO-UPLOAD-FILES-v0.2",
+  "doi": "10.5281/zenodo.23188815",
+  "files": {
+    "01_PONT_IDEAL_1_2_DOI_23188815_v0_2.pdf": {
+      "bytes": 69502,
+      "sha256": "765b0b39c691625e13a42a5ecd429e986e93f5818f13a81173933dcb85afc804"
+    },
+    "02_SUPPLEMENTS_PONT_IDEAL_1_2_v0_2.zip": {
+      "bytes": 155787,
+      "sha256": "4764e9627b17fa09559dadce7c5e9176c3ec5287339fcecd633090ff7f661783"
+    },
+    "03_LICENCE_DEL.pdf": {
+      "bytes": 94863,
+      "sha256": "733e1ad1e948125ef498a36461f6c548a8b4104e5dfa604805704d33a7b8515b"
+    }
+  },
+  "description": "Three principal files to upload, with the manifest and the supplements sidecar."
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "DYN_IDEAL_BRIDGE_PARTITION_DERIVATION_V0_1",
+  "status": "DERIVED_PENDING_INDEPENDENT_REVIEW",
+  "agent": "bridge_partition_derivation",
+  "domain": {
+    "a": "[1,2]",
+    "delta": "[0,1/a)",
+    "s": "[0,a)",
+    "beta": "[0,a)",
+    "joint_density": "1/a",
+    "support": "closed [-sqrt(2d),sqrt(2d)]",
+    "units": "unscaled ideal model; no canonical correspondence asserted"
+  },
+  "execution": {
+    "rng_created": false,
+    "rng_consumed": false,
+    "p2_invoked": false,
+    "sampler_imported": false,
+    "source_modification": false
+  },
+  "rank_partition": {
+    "h": "a^2/8",
+    "r0": "sqrt(2delta)",
+    "k1_iff": "delta<h AND r0<s<a-r0",
+    "k0_iff": "NOT(k1_iff)",
+    "contacts": "s=r0 and s=a-r0 occupied at k0; delta=h occupied at k0 for all s",
+    "a2": "delta<h always because h=1/a excluded; a2delta0 k1 for s!=0, r1=a/2",
+    "proof_rank1_occupied": "r1^2=2delta+2/a>=2/a>=a^2/4"
+  },
+  "phase": {
+    "k0": "q=s",
+    "k1": "q=(s+beta) mod a in [0,a)",
+    "k1_nonwrap": "q=s+beta if beta<a-s",
+    "k1_wrap": "q=s+beta-a if beta>=a-s",
+    "seam": "beta=a-s gives q=0 in wrap branch; unavailable seam at s=0 because beta<a"
+  },
+  "point_partition": [
+    {"r_regime":"0<=r<a/2","q_condition":"0<=q<=r","indices":[0],"contribution":"0"},
+    {"r_regime":"0<=r<a/2","q_condition":"r<q<a-r","indices":[],"contribution":"not first occupied line"},
+    {"r_regime":"0<=r<a/2","q_condition":"a-r<=q<a","indices":[-1],"contribution":"0"},
+    {"r_regime":"a/2<=r<a","q_condition":"0<=q<a-r","indices":[0],"contribution":"0"},
+    {"r_regime":"a/2<=r<a","q_condition":"a-r<=q<=r","indices":[-1,0],"contribution":"a*d-a*q^2+a^2*q-a^3/3"},
+    {"r_regime":"a/2<=r<a","q_condition":"r<q<a","indices":[-1],"contribution":"0"},
+    {"r_regime":"a<=r<3a/2","q_condition":"0<=q<=r-a","indices":[-1,0,1],"contribution":"2*a*d-2*a*q^2-2*a^3/3"},
+    {"r_regime":"a<=r<3a/2","q_condition":"r-a<q<2a-r","indices":[-1,0],"contribution":"a*d-a*q^2+a^2*q-a^3/3"},
+    {"r_regime":"a<=r<3a/2","q_condition":"2a-r<=q<a","indices":[-2,-1,0],"contribution":"2*a*d-2*a*(q-a)^2-2*a^3/3"}
+  ],
+  "contact_cases": [
+    "r=0,q=0: point0; otherqempty",
+    "r=a/2,q=a/2: two points +/-a/2, c=a^3/24",
+    "r=a,q=0: points -a,0,a",
+    "r=a,0<q<a: points q-a,q",
+    "r=3a/2 never reached on any actual first occupied line"
+  ],
+  "thresholds": {
+    "k0_r_equals_a": "delta=a^2/2, admissible iff a<cuberoot(2)",
+    "k1_r_equals_a": "delta=a^2/2-1/a",
+    "k1_subregimes": [
+      "a<cuberoot(2): r1>a",
+      "a=cuberoot(2),delta0: r1=a; delta>0: r1>a",
+      "cuberoot(2)<a<cuberoot(8/3): threshold strictly inside [0,h)",
+      "a>=cuberoot(8/3): r1<a because delta<h"
+    ],
+    "max_points": 3,
+    "max_points_proof_k0": "(r0/a)^2<2/a^3<=2<9/4",
+    "max_points_proof_k1": "(r1/a)^2<1/4+2/a^3<=9/4; strict delta<h excludes endpoint"
+  },
+  "line_average": {
+    "definition": "phase average of c, with c0 for empty or singleton",
+    "below_threshold": "H=0 for r<a/2",
+    "above_threshold": "H=(2/3)*d*r+a*d-(2/3)*a^2*r+a^3/6 for r>=a/2",
+    "proof": "xmax uniform on [r-a,r], xmin uniform on [-r,-r+a]; odd F=d*x-x^3/3 gives H=(2/a)integral_(r-a)^r F(x)dx",
+    "normalized": "H=a^3*p(r/a)",
+    "p": "(2*z^3+3*z^2-4*z+1)/6"
+  },
+  "expectation": {
+    "G": "G0+G1",
+    "G0": "a*integral_h^(1/a) H(delta,a) ddelta",
+    "G1": "a*integral_0^h (1-2sqrt(2delta)/a)H(delta+1/a,a) ddelta",
+    "conditioned_phase_proof": "E0 depends only on s,delta; beta uniform sends q1 uniform for each fixed s",
+    "Q_primitive": "(4sqrt(2)/15)*d^(5/2)+(a/2)*d^2-(4sqrt(2)/9)*a^2*d^(3/2)+(a^3/6)*d",
+    "Q_at_h": "17*a^5/5760",
+    "G0_closed": "(4sqrt(2)/15)*a^(-3/2)+1/2-(4sqrt(2)/9)*a^(3/2)+a^3/6-17*a^6/5760",
+    "delta_substitution": "delta=(a^2/8)*t^2; 0<=t<=1",
+    "G1_smooth": "(a^6/4)*integral_0^1 t*(1-t)*p(sqrt(t^2/4+2/a^3))dt"
+  },
+  "integral_reduction": {
+    "I": "I0+I1",
+    "I0_exact": "233591/322560-128sqrt(2)/315",
+    "I0_primitive": "(8sqrt(2)/15)*sqrt(a)+a^2/4-(8sqrt(2)/63)*a^(7/2)+a^5/30-17*a^8/46080",
+    "I1_exact_rectangle": "integral_1^2 integral_0^1 (a^7/4)*t*(1-t)*p(sqrt(t^2/4+2/a^3))dt da",
+    "rectangle_integrand": "real analytic on neighborhood of [1,2]x[0,1] because radicand>=1/4",
+    "numerical_enclosure": null,
+    "canonical_value": null
+  }
+}

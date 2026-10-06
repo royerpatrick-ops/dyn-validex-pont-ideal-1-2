@@ -1,0 +1,8 @@
+Sources de préparation de la notice Zenodo, consultées le 6 octobre 2026.
+Les pages ci-dessous expliquent le dépôt ; elles ne valident pas la preuve.
+https://help.zenodo.org/docs/deposit/create-new-upload/
+https://help.zenodo.org/docs/deposit/describe-records/resource-type/
+https://help.zenodo.org/docs/deposit/describe-records/licenses/
+https://support.zenodo.org/help/en-gb/13/227
+Le nouveau DOI et le DOI antérieur sont ceux communiqués par l’auteur.
+Leur publication effective et leur résolution publique n’ont pas été attestées.
